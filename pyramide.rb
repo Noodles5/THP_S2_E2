@@ -13,4 +13,4 @@ if etages < 1 || etages > 25
       i.times { print "#" }
       puts
     end
-  end 
+end 

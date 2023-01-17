@@ -1,8 +1,12 @@
-
+#Que les emails pairs
 
 
 50.times do |i|
-     i = 1
+    if i<9
         puts "jean.dupont0#{i+1}@email.fr"
-    i = i + 1
+    else i>9
+        puts "jean.dupont#{i+1}@email.fr"
+    end
 end
+
+#En cours...
