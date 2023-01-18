@@ -1,20 +1,10 @@
-puts "Salut, bienvenue dans ma super pyramide ! Combien d'étages veux-tu ?"
-puts "Choisis un nombre d'étages entre 1 et 25 stp"
-
-etages = gets.chomp.to_i
-puts "\n" #Saut a la ligne
-puts "Voici la pyramide :"
-puts "\n" #Saut a la ligne
-
-if etages < 1 || etages > 25
-    puts 'Gros malin, entre 1 et 25 stp!!'
-  else
-    etages.downto(1) do |i|
-      i.times { print "#" }
-      puts
-    end
-  end 
-
-
-  # C'est pas ça, mais c'est joli quand même :))
+puts "Donnes moi un nombre entre 1 et 25"
+nb = gets.chomp.to_i
+if nb >= 1 and nb <= 25 then
+  nb.times do |i|
+    puts " "*(nb-i-1) + "#"*(2*(i+1)-1)
+  end
+else
+  puts "Ce n'est pas un nombre entre 1 et 25 !"
+end
   
